@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Task-manager</title>
 </head>
 <body>
-    <h1> Task manager </h1>
-    <form>
-        <input  type = "text"
-                id = "add task"
-                placeholder="Type your task here...">
-        <label for="add task"> [ add task ] </label>
-    </form>
+    <main>
+            <h1> Task manager </h1>
+        <form id = "task-form">
+            <input  type = "text"
+                    id = "new-task"
+                    placeholder="Type your task here...">
+            <button type="submit" id ="add-button">Add task</button>
+        </form>
+        
+
+        <section>
+            <ul id = "task-list">
+            </ul>
+        </section>
+    </main>
     
-
-    <section>
-        <ul>
-            <li>Estudar python</li>
-            <li>Comprar o curso de PHP</li>
-        </ul>
-    </section>
-
+    <script src ="js/script.js"></script>
 </body>
 </html>
